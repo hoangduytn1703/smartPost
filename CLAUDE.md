@@ -45,6 +45,7 @@ Luồng: dán link YouTube → yt-dlp lấy phụ đề + video → Gemini (MAST
 - Chưa có cách xoá file `source.mp4` cũ ngoài nút Xoá cả video.
 
 ## Nhật ký
+- 27/10: đẩy code lên https://github.com/hoangduytn1703/smartPost.git (nhánh `main`, remote SSH). Không đưa `.env` (key Gemini), `storage/` (video, sqlite), venv, `node_modules`, `frontend/dist`. Máy kia: `git clone`, `cp .env.example .env` rồi dán key, `make install`.
 - 27/10: danh sách video thành lưới thẻ (ảnh trên, chữ dưới), trang iPhone 2 cột trên màn rộng. Chưa nhờ người dùng test lại.
 - 27/10: chỉnh lại giao diện (nền tối, nút chính màu sáng, thẻ video và màn duyệt chia cột). Chưa nhờ người dùng test lại.
 - 27/10: nút "Tải hết & sang iPhone" (zip mọi clip đã render, mở `/phone?job=`). Copy trên iPhone gồm caption + hashtag; TikTok không lấy chữ từ nút chia sẻ nên phải dán.
